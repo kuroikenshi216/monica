@@ -19,5 +19,7 @@ class TokenDeleteEvent
      */
     public function __construct(
         public SyncToken $token
-    ) {}
+    ) {
+        \Log::info('token delete event');
+    }
 }
